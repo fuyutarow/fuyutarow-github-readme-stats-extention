@@ -1,0 +1,41 @@
+{
+  "name": "github-readme-stats-extention",
+  "description": "github-readme-stats-extention",
+  "manifest_version": 2,
+  "version": "0.202104.0",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "https://github.com/*",
+    "tabs",
+    "activeTab",
+    "contextMenus"
+  ],
+  "background": {
+    "scripts": [
+      "hot-reload.js",
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
