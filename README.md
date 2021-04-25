@@ -1,29 +1,5 @@
-# Chrome Extension boilerplate created with React Typescript
+# GitHub Readme Stats Extension
 
-## Getting started
+[GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats), a visualization of the user characteristics of your GitHub account, is now available as an extension. Let's enjoy GitHub more!
 
-Create a project based on this boilerplate.
-
-```
-$ npx degit https://github.com/sivertschou/react-typescript-chrome-extension-boilerplate.git#christmas <project-name>
-```
-
-Navigate to the project directory and install the dependencies.
-
-```
-$ npm install
-```
-
-To build the extension, and rebuild it when the files are changed, run
-
-```
-$ npm start
-```
-
-After the project has been built, a directory named `dist` has been created. You have to add this directory to your Chrome browser:
-
-1. Open Chrome.
-2. Navigate to `chrome://extensions`.
-3. Enable _Developer mode_.
-4. Click _Load unpacked_.
-5. Select the `dist` directory.
+![](https://raw.githubusercontent.com/fuyutarow/github-readme-stats-extension/alpha/images/screenshot.png)
