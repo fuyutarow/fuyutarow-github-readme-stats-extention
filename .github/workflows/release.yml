@@ -39,7 +39,7 @@ jobs:
           ls
           yarn install
           yarn build
-          zip -r ${APPNAME}-v${VERSION}.zip ./dist
+          zip -r ${APPNAME}-${VERSION}.zip ./dist
         env:
           APPNAME: ${{ steps.set_envs.outputs.appname }}
           VERSION: ${{ steps.set_envs.outputs.version }}
