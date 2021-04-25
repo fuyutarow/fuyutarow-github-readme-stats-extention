@@ -1,6 +1,6 @@
 {
   "name": "github-readme-stats-extension",
-  "version": "0.2021.7",
+  "version": "0.2021.8",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

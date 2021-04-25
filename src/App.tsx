@@ -10,12 +10,12 @@ import Grid from '@material-ui/core/Grid';
 
 import { name as appName, version } from '../package.json';
 
-const toProfile: {[theme: string]: string} = {
+const toProfile: { [theme: string]: string } = {
   'solarized-dark': 'solarized_dark',
   'vue': 'vue',
 };
 
-const toBG: {[theme: string]: string} = {
+const toBG: { [theme: string]: string } = {
   'solarized-dark': '#282c34',
   'vue': '#ECEFF4',
 };
@@ -78,7 +78,9 @@ const App = () => {
           fontSize: 12,
           color: 'gray',
         }}>
-          {appName} v{version}
+          <a href={'https://github.com/fuyutarow/github-readme-stats-extension'}>
+            {appName} v{version}
+          </a>
         </div>
       </Container>
     </div>
