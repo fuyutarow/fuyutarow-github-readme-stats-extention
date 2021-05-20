@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 
-import logo from './logo.svg';
-
 import './App.css';
 import { useKeyPress } from 'react-use';
 import Container from '@material-ui/core/Container';
@@ -78,7 +76,11 @@ const App = () => {
           fontSize: 12,
           color: 'gray',
         }}>
-          <a href={'https://github.com/fuyutarow/github-readme-stats-extension'}>
+          <a href={'https://github.com/fuyutarow/github-readme-stats-extension'} onClick={(e: any) => {
+            if (e.target.href !== undefined) {
+              chrome.tabs.create({ url: e.target.href });
+            }
+          }}>
             {appName} v{version}
           </a>
         </div>
