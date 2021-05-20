@@ -1,11 +1,10 @@
 [tasks.version-up]
-script = ['''
+script = '''
 version-make up -zr package.json
-version-make up -zr public/manifest.json
-yarn build
-''']
+version-make set public/manifest.json -r -v $(version-make show package.json)
+'''
 
 [tasks.version-tag]
-script = ['''
+script = '''
 git tag v$(version-make show package.json)
-''']
+'''
